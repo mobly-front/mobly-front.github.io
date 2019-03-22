@@ -1,0 +1,4 @@
+.codeToCopy{background: #000; padding: 8px 9px; height: 136px; overflow: auto;}
+.codeToCopy > code{    color: #55efc4;}
+
+.codes .col-sm-4:nth-child(even){border-left: 1px solid #b2bec3; border-right: 1px solid #b2bec3}
