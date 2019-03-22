@@ -1,5 +1,5 @@
 body{ background-color:#f6f4f5 }
-header { background: #213451; }
+header { background: #213451;margin-bottom: 30px; }
 .menuConteiner{position: relative; }
 .logoTxt { pointer-events: none; color: #f6f4f5; font-family: 'Ubuntu', sans-serif; font-size: 25px; padding-top: 7px; padding-bottom: 7px; }
 .menuFront > .navbar-collapse a.nav-link{color:#f6f4f5; transition: color 0.3s;font-size: 17px;}
