@@ -230,6 +230,43 @@
                     <span class="warning__txt">Clique na caixa de texto</span>
                 </div>
             </div>
+            
+        </div>
+        <div class="row mt-5 mb-5"></div>
+        <div class="row">
+                <div class="col-sm-4">
+                        <p class="lead">Pegar conteúdo para LarStyle</p>
+                        <div class="codeToCopy">
+                                <textarea>$ = jQuery;
+                                        var $cards = $('#main > .sp-row.post-layout.grid');
+                                        var countCard = 0;
+                                        var $cardLs = "&#60style> .larStyle { background: linear-gradient(#f9f4ff, #fff);} .larStyle__title { display: block;padding: 4% 0px; font: 16px \"Source Sans Pro Semibold\"; color: #414141; text-align: center; margin: 0;} .larStyle__title--purple { color: #5f22a8; display: block; font: 40px \"Source Sans Pro Semibold\";} .larStyle__postImg { width: 100%;} .larStyle__postImg.larStyle__postImg { width: 84%; margin: auto; display: block;} .larStyle__postCat { text-align: center;} .larStyle__postCat a { color: #ff4104 !important; font: 16px \"Source Sans Pro Semibold\"; text-transform: uppercase;} .larStyle__postTitle { color: #414141; font: 123% \"Source Sans Pro Semibold\"; width: 84%; margin: auto; text-align: center;} .larStyle__postDate { font-size: 14px; color: #c1c1c1; text-transform: uppercase; font: 14px \"Source Sans Pro Semibold\"; text-align: center; margin: 0px;} .larStyle__postCat__dot { color: #d5d5d5; font-size: 18px; margin: 0 4px;} .larStyle .slider-glide { padding-bottom: 40px;} .voltarTopo { text-align: center; background: #e1e7e3;} .voltarTopo__txt { color: #21283c; font: 20px \"Source Sans Pro Semibold\"; padding: 14px 0px; line-height: 20px;} &#60/style>&#60div class=\"larStyle gtm-lars-click-m\" id=\"ascend-larstyle\"> &#60a class=\"larStyle__title\" target=\"_blank\" href=\"https://www.mobly.com.br/blog/\"> &#60p>&#60strong class=\"larStyle__title--purple\">Lar Style&#60/strong>O Blog da Mobly&#60/p> &#60/a> &#60div class=\"slider-glide\"> &#60ul class=\"slider__wrapper\">";
+                                        $($cards).find('.sp-col-6').each(function(){
+                                            if(countCard &#60 6){
+                                                var postLink = $(this).find('.post-img > a').attr('href');
+                                                var imgSrc = $(this).find('.post-img > a > img').attr('src');
+                                                var catLink = $(this).find('.post-header > .cat > a').attr('href');
+                                                var cat = $(this).find('.post-header > .cat > a').html();
+                                                var postTitle = $(this).find('.post-header > h2 > a').html();
+                                                var postDate = $(this).find('.post-header > time > a > span').html();
+                                                var cardLstxt = "&#60li class=\"larStyle__post\"> &#60a target=\"_blank\" href=\""+postLink+"\"> &#60img class=\"larStyle__postImg\" src=\"\" data-slider-src=\""+imgSrc+"\" /> &#60/a> &#60p class=\"larStyle__postCat\"> &#60a target=\"_blank\" href=\""+catLink+"\" rel=\"category tag\">"+cat+"&#60/a> &#60/p> &#60a target=\"_blank\" href=\"/"+postLink+"\"> &#60p  class=\"larStyle__postTitle\">"+postTitle+"&#60/p> &#60p  class=\"larStyle__postDate\">"+postDate+"&#60/p> &#60/a> &#60/li>";
+                                                $cardLs += cardLstxt;
+                                                countCard++;
+                                            }else{
+                                                return false;
+                                            }
+                                            
+                                        })
+                                        $cardLs += "&#60/ul> &#60/div> &#60/div> &#60div class=\"voltarTopo gtm-cpm-click-m\"> &#60p class=\"voltarTopo__txt\">&#60i class=\"icon-angle-up\">&#60/i>&#60br/>Voltar ao topo&#60/p> &#60/div>";
+                                        console.log($cardLs);
+                                        copy($cardLs);
+        
+                            </textarea>
+                        </div>
+                        <div class="row warning">
+                            <span class="warning__txt">Clique na caixa de texto</span>
+                        </div>
+                    </div>
         </div>
     </main>
 </body>
