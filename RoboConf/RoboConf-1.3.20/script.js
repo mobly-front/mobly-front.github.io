@@ -17,6 +17,10 @@ $(document).ready(function () {
         $('.warning__txt').css('background', '#ff7675').html('Copiado!');
         $('.warning__arrow').css('border-right', '6px solid #ff7675');
     });
+    
+    $('.warning__txt').on('click', function(){
+        $(this).html('Na caixa de cima, bobinho')
+    })
 
     /*Clique do botão */
     $('.formGerar__conferir').on('click', function () {

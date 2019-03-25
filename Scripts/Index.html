@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../style.css">
     <link type="text/css" rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 
 </head>
 
@@ -95,17 +96,16 @@
             <div class="col-sm-4 col-md-4">
                 <p class="lead">Gerador de Hashs</p>
                 <div class="codeToCopy">
-                    <code>var quantidade = 20;
-                        var hashs = "";
-                        for(i=0; i &#60 quantidade; i++){ $("#generateHash").click(); hashs +=
-                        $(".form_input.hashInput").val()+"\n";}
-                        console.log(hashs);</code>
+                    <textarea>var quantidade = 20;var hashs = "";for(i=0; i &#60 quantidade; i++){ $("#generateHash").click(); hashs += $(".form_input.hashInput").val()+"\n";}console.log(hashs);</textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
                 </div>
             </div>
             <div class="col-sm-4  col-md-4">
                 <p class="lead">CMS com include-block</p>
                 <div class="codeToCopy">
-                    <code>
+                    <textarea>
                         $("img[src$='/img/crystal/delete.png']").click();//Delete campos default
                         //Add campos
                         $('#add_items_select').val('1').trigger('change');//Page Title
@@ -130,13 +130,16 @@
                         /*Colocar o código para mudar o título da página, encontrado no cronograma*/
 
                         $("#saveAsNewRevision").click();//Save CMS
-                        // !!!!!!!!!!!!! ALTERAR !!!!!!!!!!!!!</code>
+                        // !!!!!!!!!!!!! ALTERAR !!!!!!!!!!!!!</textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
                 </div>
             </div>
             <div class="col-sm-4 col-md-4">
-                <p class="lead">CMS com include-block</p>
+                <p class="lead">CMS com script title</p>
                 <div class="codeToCopy">
-                    <code>
+                        <textarea>
                         $("img[src$='/img/crystal/delete.png']").click();//Delete campos default
 
                         //Add campos
@@ -157,9 +160,9 @@
                         'undefined' && MOBILE){ $('&#60div class=\"conteiner\"&#62
                         &#60h1 class=\"mb-15 ml-10 default-title\">'+document.title.split(\"|\")[0]+'&#60/h1&#62
                         &#60/div&#62').insertBefore('.catalog-mobile-content ul.catalog-filter'); }else{ $('&#60div
-                            class=\"conteiner\"&#62
-                            &#60h1 class=\"mt-20 mb-30 default-title\"&#62'+document.title.split(\"|\")[0]+'&#60/h1&#62
-                            &#60/div>').insertBefore('.catalog-v3'); }}catch(e){}");
+                        class=\"conteiner\"&#62
+                        &#60h1 class=\"mt-20 mb-30 default-title\"&#62'+document.title.split(\"|\")[0]+'&#60/h1&#62
+                        &#60/div>').insertBefore('.catalog-v3'); }}catch(e){}");
 
                         // !!!!!!!!!!!!! TITLE's CAMPO Cronograma de campanha: Front Robo Title !!!!!!!!!!!!!
 
@@ -167,52 +170,65 @@
 
                         // !!!!!!!!!!!!! TITLE's CAMPO Cronograma de campanha: Front Robo Title !!!!!!!!!!!!!
 
-                        $("#saveAsNewRevision").click();//Save CMS</code>
+                        $("#saveAsNewRevision").click();//Save CMS</textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
                 </div>
             </div>
         </div>
         <div class="row mt-5 mb-5"></div>
         <div class="row">
             <div class="col-sm-4">
-                    <p class="lead">Abrir várias páginas</p>
-                    <div class="codeToCopy">
-                        <code>var sites = []
+                <p class="lead">Abrir várias páginas</p>
+                <div class="codeToCopy">
+                        <textarea>var sites = []
+                        /*Inserir os links das páginas a serem abertas*/
+                        function abrirJanelas(){
+                        for(var i = 0; i &#60sites.length; i++){
+                        window.open('https://mobly.com.br/'+sites[i], '_blank');
+                        }
+                        }
+                        abrirJanelas()</textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="lead">Abrir vários Bob</p>
+                <div class="codeToCopy">
+                        <textarea>function abrirJanelas(quantidade){
+                        for(var i = 0; i &#60 quantidade; i++){
+                        window.open('https://bob.mobly.com.br/cms' , '_blank');
+                        }
+                        }
+                        abrirJanelas(35);</textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="lead">Mostrar Imagens do App na Neemu</p>
+                <div class="codeToCopy">
+                        <textarea>var conteinerw = $('&#60div class="conteinerw" style="width: 640px;margin:
+                        auto"&#62&#60/div&#62');
+                        conteinerw.appendTo('.page-content');
+                        $( ".content-image" ).each(function( index ) {
+                        console.log($(this).children().last().find(".form-control").val());
+                        var imgSrc = $(this).children().last().find(".form-control").val();
+                        var img = $('&#60img&#62');
+                        img.attr('src', imgSrc);
+                        img.appendTo('.conteinerw');
+                        });
 
-                                function abrirJanelas(){
-                                    for(var i = 0; i &#60sites.length; i++){
-                                        window.open('https://mobly.com.br/'+sites[i], '_blank');
-                                    }
-                                }
-                                abrirJanelas()</code>
-                    </div>
-            </div>
-            <div class="col-sm-4">
-                    <p class="lead">Abrir vários Bob</p>
-                    <div class="codeToCopy">
-                        <code>function abrirJanelas(quantidade){
-                                for(var i = 0; i &#60 quantidade; i++){
-                                    window.open('https://bob.mobly.com.br/cms' , '_blank'); 
-                                }
-                            }
-                            abrirJanelas(35);</code>
-                    </div>
-            </div>
-            <div class="col-sm-4">
-                    <p class="lead">Mostrar Imagens do App na Neemu</p>
-                    <div class="codeToCopy">
-                        <code>var conteinerw = $('&#60div class="conteinerw" style="width: 640px;margin: auto"&#62&#60/div&#62');
-                            conteinerw.appendTo('.page-content');
-                            $( ".content-image" ).each(function( index ) {
-                                console.log($(this).children().last().find(".form-control").val());
-                                var imgSrc = $(this).children().last().find(".form-control").val();
-                                var img = $('&#60img&#62'); 
-                                img.attr('src', imgSrc);
-                                img.appendTo('.conteinerw');
-                            });
-                            
-                            
-                    </code>
-                    </div>
+
+                    </textarea>
+                </div>
+                <div class="row warning">
+                    <span class="warning__txt">Clique na caixa de texto</span>
+                </div>
             </div>
         </div>
     </main>
