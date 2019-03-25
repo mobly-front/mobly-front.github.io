@@ -14,12 +14,14 @@ $(document).ready(function () {
         var txtEl = $('.jsToCopy');
         txtEl.select();
         document.execCommand('copy');
-        $('.warning__txt').css('background', '#ff7675').html('Copiado!');
+        $('.warning__txt').css('background', '#ff7675').html('Copiado!').addClass('actived-box');
         $('.warning__arrow').css('border-right', '6px solid #ff7675');
     });
     
     $('.warning__txt').on('click', function(){
-        $(this).html('Na caixa de cima, bobinho')
+        if(!$(this).hasClass('actived-box')){
+            $(this).html('Na caixa de cima, bobinho')
+        }
     })
 
     /*Clique do botão */
@@ -27,7 +29,7 @@ $(document).ready(function () {
         /*Retorna ao padrão */
         var teste = $('.htmlCode').val()
         $('.conteinerC, .conteinerCM, .conteinerCA').remove();
-        $('.warning__txt').css('background', '#636e72').html('Clique na caixa de texto');
+        $('.warning__txt').css('background', '#636e72').html('Clique na caixa de texto').removeClass('actived-box');
         $('.warning__arrow').css('border-right', '6px solid #636e72');
         $('.cronoSpace > div, .cronoSpace > p').hide()
         $('body').append(teste);
