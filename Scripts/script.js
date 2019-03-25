@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $('.codeToCopy').on('click', function () {
-        var txtEl = $('.codeToCopy > textarea');
+        var txtEl = $(this).find('textarea');
         txtEl.select();
         document.execCommand('copy');
         $('.warning__txt').css('background', '#636e72').html('Clique na caixa de texto');
