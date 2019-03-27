@@ -10,6 +10,7 @@ a.nav-link:hover{color:#55efc4 !important}
 .mainContent a:hover img{opacity: 0.5}
 .mainContent a{color: #00b894; text-decoration: none; transition: 0.3s}
 .mainContent a:hover{color:#a29bfe;}
+.moblyCores > div{transition: opacity 0.3s}
 @media (max-width: 335px){
     .logoTxt{font-size:23px}
 }
