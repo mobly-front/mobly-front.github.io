@@ -214,16 +214,7 @@
             <div class="col-sm-4">
                 <p class="lead">Mostrar Imagens do App na Neemu</p>
                 <div class="codeToCopy">
-                        <textarea>var conteinerw = $('&#60div class="conteinerw" style="width: 640px;margin:
-                        auto"&#62&#60/div&#62');
-                        conteinerw.appendTo('.page-content');
-                        $( ".content-image" ).each(function( index ) {
-                        console.log($(this).children().last().find(".form-control").val());
-                        var imgSrc = $(this).children().last().find(".form-control").val();
-                        var img = $('&#60img&#62');
-                        img.attr('src', imgSrc);
-                        img.appendTo('.conteinerw');
-                        });
+                        <textarea>var conteinerw = $('&#60div class="conteinerw" style="width: 640px;margin:auto">&#60/div>'); conteinerw.appendTo('.page-content'); $(".content-image").each(function (index) { console.log($(this).children().last().find(".form-control").val()); var imgSrc = $(this).children().last().find(".form-control").val(); var img = $('&#60img>'); img.attr('src', imgSrc); img.appendTo('.conteinerw'); });
 
 
                     </textarea>
