@@ -133,3 +133,45 @@ iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; heig
 
 
 
+*{margin: 0; padding: 0}
+div{position:relative;}
+textarea { resize: none; }
+li { color: red; }
+.conteinerCA{margin: 0 auto; width: 640px;}
+.conteinerCA > div { float: left; position: relative; }
+main.mainContent {background: #f6f4f5; }
+.listaCMS{ }
+.listaCMS__lps{transition: all 0.3s}
+.listaCMS__lps__aviso{    position: absolute; left: 176px; top: -28px; overflow: auto; width: 190px; height: 140px; opacity: 0; transition: opacity 0.3s; background: #6acea9; text-align: center; padding: 9px; border-radius: 9px;}
+.listaCMS__lps:hover{background: #6acea9}
+.listaCMS__lps:hover .listaCMS__lps__aviso{opacity: 1}
+.formGerar { margin: 0 auto; width: 100px; text-align: center; margin: 0 auto; width: 320px; text-align: center; position: relative; }
+.formGerar p { font-family: "Source Sans Pro Semibold"; }
+.formGerar__conferir{text-decoration: none;display: block;margin-top: 10px;}
+.formGerar__conferir p{background: transparent; padding: 8px 4px; border: 2px solid #000; border-radius: 7px; color: #000; font: 15px 'Source Sans Pro Semibold'; transition: 0.3s; margin-bottom: 10px}
+.formGerar__conferir p:hover{background: #000; color: #FFF}
+.jsToCopy{    background: #000; color: #FFF; overflow: hidden; width: 100%}
+.formGerar__conteiner{position: relative;}
+.warning { width: 100%; margin: 0 auto; }
+
+.warning__txt{    text-align: center; margin: 0 auto; width: 93%; padding: 12px 1px; color: #FFF; background: #636e72;}
+
+.htmlCode { width: 100%; }
+
+
+.listaCMS__ul > li{list-style-type:none; word-break: break-all;}
+
+.formGerar__conteiner:hover .warning{opacity: 1}
+.conteinerC{margin: 0 auto}
+.conteinerCM{margin: 0 auto; width: 320px}
+.nEspecial{height: auto; margin-top: 0 !important;}
+
+
+@keyframes aniWarning{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+

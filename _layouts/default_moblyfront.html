@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "pt-br" }}">
+
+  {%- include head_moblyFront.html -%}
+
+  <body background="{{site.baseurl}}/images/free-pokemon-tumblr-wallpaper-1.jpg">
+
+    {%- include header_moblyFront.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer_moblyFront.html -%}
+
+  </body>
+
+</html>

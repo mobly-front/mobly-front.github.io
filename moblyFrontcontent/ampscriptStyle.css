@@ -17,7 +17,7 @@ textarea { margin: 10px 0px; width: 590px !important; border: 2px solid #000; he
 .criacao__linhaTabela { margin: 12px 0px; display: block; border: 1px solid #efefef;}
 .criacao__titulo { margin: 0; font-size: 26px;}
 
-
+.mainContent{background: #f6f4f5;    padding-bottom: 1px; }
 
 .redirect { width: 960px; margin: auto;}
 .redirect span { font-size: 12px; display: block; margin: 20px 0px;}

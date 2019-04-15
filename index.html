@@ -1,205 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+---
+layout: home
+title: Mobly Front Git
+---
+<script src="{{site.baseurl}}/js/script.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mobly Front</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
-</head>
-
-<body>
-    <header>
-        <div class="container menuConteiner">
-            <div class="row menuTopo justify-content-sm-between">
-                <div class="col-sm-4 logoTxt"><a href="#">Mobly Front</a></div>
-                <div class="col-sm-7 menuTopo">
-                    <nav class="navbar menuFront navbar-expand-lg navbar-dark">
-                        <button class="navbar-toggler menuBtn" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">Menu
-                        </button>
-                        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./RoboConf/Index.html">Conferência</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Newsletter/Index.html">Newsletter</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./RoboAmpscript/Index.html">Ampscript</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Scripts/Index.html">Códigos</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Acesso Rápido
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="https://bob.mobly.com.br/cms"
-                                            target="__blank">Bob</a>
-                                        <a class="dropdown-item"
-                                            href="https://app.bugsnag.com/mobly/www-dot-mobly-dot-com-dot-br/errors?filters[event.since][0]=1d&filters[error.status][0]=open&sort=last_seen"
-                                            target="__blank">Bugsnag</a>
-                                        <a class="dropdown-item"
-                                            href="https://docs.google.com/spreadsheets/d/1Dovh_v-b6OyVy1B_GTvJOxKLLBYUav6FjdoD2OrMtII/edit#gid=22829735"
-                                            target="__blank">Cronograma</a>
-                                        <a class="dropdown-item"
-                                            href="https://favro.com/organization/18252bce90dbc16d2c29989c/125338c1734b413b9f57faea"
-                                            target="__blank">Favro</a>
-                                        <a class="dropdown-item"
-                                            href="https://insights.hotjar.com/sites/684448/dashboard"
-                                            target="__blank">Hotjar</a>
-                                        <a class="dropdown-item" href="https://www.mobly.com.br/"
-                                            target="__blank">Mobly</a>
-                                        <a class="dropdown-item" href="https://neemu.chaordic.com.br/central/"
-                                            target="__blank">Neemu</a>
-                                        <a class="dropdown-item" href="https://mc.s7.exacttarget.com/cloud/#app/"
-                                            target="__blank">Salesforce</a>
-                                        <a class="dropdown-item"
-                                            href="https://www.mobly.com.br/?showProfiling=11c1afd4e7159894293651005814a1e1"
-                                            target="__blank">Show Profiling</a>
-                                        <a class="dropdown-item" href="https://atendimento.mobly.com.br/wp-login.php"
-                                            target="__blank">WP Auto Atendimento</a>
-
-                                        <a class="dropdown-item" href="https://www.mobly.com.br/blog/wp-login.php"
-                                            target="__blank">WP Blog</a>
-                                            <a class="dropdown-item" href="http://blog-staging.mobly.com.br/wp-login.php"
-                                            target="__blank">WP Blog-Staging</a>
-
-
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </header>
-
-    <main class="container mainContent mt-5" style="position: relative">
-        <div class="row mb-5">
-            <h1 class="m-auto display-4">Ferramentas</h1>
-        </div>
-        <div class="row justify-content-sm-between">
-            <div class="col-sm-5">
-                <div>
-                    <a href="./RoboConf/Index.html">
-                        <img class="img-fluid img-thumbnail" src="./Imagens/roboConf.png" alt="Robô Conferência">
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 align-self-center">
-                <div>
-                    <h1 class="text-center">Ferramenta de conferência</h1>
-                    <p class="lead">Script desenvolvido para realizar a conferência de links e imagens relacionadas às
-                        páginas programadas pelo front.</p>
-                    <a href="./RoboConf/Index.html">Ir para a página</a>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5"></div>
-        <div class="row justify-content-sm-between">
-            <div class="col-sm-5">
-                <div>
-                    <a href="./RoboAmpscript/Index.html">
-                        <img class="img-fluid img-thumbnail" src="./Imagens/roboAmp.png" alt="Robô Conferência">
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 align-self-center order-sm-first">
-                <div>
-                    <h1 class="text-center">Gerador de Ampscript</h1>
-                    <p class="lead">Ferramenta desenvolvida para geração de códigos em Ampscript para os E-mail de
-                        marketing</p>
-                    <a href="./RoboAmpscript/Index.html">Ir para a página</a>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5"></div>
-        <div class="row justify-content-sm-between">
-            <div class="col-sm-5">
-                <div>
-                    <a href="./Newsletter/Index.html">
-                        <img class="img-fluid img-thumbnail" src="./Imagens/roboNl.png" alt="Robô Conferência">
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 align-self-center">
-                <div>
-                    <h1 class="text-center">Gerador de códigos para Newsletter</h1>
-                    <p class="lead">Página que disponibiliza vários blocos html com as configurações certas para
-                        funcionar nos clientes mais usados.</p>
-                    <a href="./Newsletter/Index.html">Ir para a página</a>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5"></div>
-        <div class="row justify-content-sm-between">
-            <div class="col-sm-5">
-                <div>
-                    <a href="./Scripts/Index.html">
-                        <img class="img-fluid img-thumbnail" src="./Imagens/scriptsRand.png" alt="Robô Conferência">
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 align-self-center order-sm-first">
-                <div>
-                    <h1 class="text-center">Scripts</h1>
-                    <p class="lead">Códigos em JavaScript que foram desenvolvidos sem uma interface</p>
-                    <a href="./Scripts/Index.html">Ir para a página</a>
-                </div>
-            </div>
-        </div>
+<main>
+    <div class="container container-g text-center mt-5 mb-5">
+      <a href="{{site.baseurl}}/moblyFrontcontent/ampscript.html" class="item-g">
         
-
-        <div class="row mt-5">
-            <h1 class=" m-auto text-center">Mobly Interface Style Guide</h1>
+        <div class="desc">
+          <p class="lead">Ampscript</p>
+          <p class="desc__txt">Geração de códigos Ampscript</p>
         </div>
-        <div class="row moblyCores mt-5">
-            <div class="col-sm-2" style="background-color:#ff4600; color: #FFF ">Laranja <br>#ff4600</div>
-            <div class="col-sm-2" style="background-color: #FFF; ">Branco <br>#FFF</div>
-            <div class="col-sm-2" style="background-color: #5f23a8; color: #FFF">Roxo<br> #5f23a8</div>
-            <div class="col-sm-2" style="background-color:#64d4c8;  ">Azul Esverdeado<br> #64d4c8</div>
-            <div class="col-sm-2" style="background-color:#ffb432;  ">Amarelo <br>#ffb432</div>
-            <div class="col-sm-2" style="background-color: #ff0a1e; color: #FFF">Vermelho <br>#ff0a1e</div>
-        </div>
-        <div class="row moblyCores">
-            <div class="col-sm-2" style="background-color: #cc80ff; ">Lilás<br> #cc80ff</div>
-            <div class="col-sm-2" style="background-color:#64b4d7;  ">Azul médio<br> #64b4d7</div>
-            <div class="col-sm-2" style="background-color: #46d25a; ">Verde<br> #46d25a</div>
-            <div class="col-sm-2" style="background-color:#0a32a0; color: #FFF ">Azul<br> #0a32a0</div>
-            <div class="col-sm-2" style="background-color:#e1cdbe ; ">Rosa Claro <br>#e1cdbe</div>
-            <div class="col-sm-2" style="background-color: #c3e1dc; ">Cinza Esverdeado <br>#c3e1dc</div>
-        </div>
-        <div class="row moblyCores mb-5">
-            <div class="col-sm-2" style="background-color: #e1e6e1; ">Cinza Claro<br> #e1e6e1</div>
-            <div class="col-sm-2" style="background-color: #becddc; ">Cinza Azulado <br>#becddc</div>
-            <div class="col-sm-2" style="background-color: #9bafbe; ">Cinza Médio<br> #9bafbe</div>
-            <div class="col-sm-2" style="background-color: #828791;color: #FFF ">Cinza Concreto<br> #828791</div>
-            <div class="col-sm-2" style="background-color: #414141;color: #FFF ">Cinza Grafite <br>#414141</div>
-            <div class="col-sm-2" style="background-color: #282d3c;color: #FFF ">Cinza Chumbo <br>#282d3c</div>
-        </div>
-
-        <textarea style="height: 0; position: absolute; bottom: 26px; z-index: -99999; opacity: 0" class="colorToCopytxt"></textarea>
-    </main>
-</body>
-
-</html>
+        <img src="{{site.baseurl}}/images/roboAmp.png" alt="">
+      </a>
+      <a href="{{site.baseurl}}/moblyFrontcontent/conferencia.html" class="item-g">
+          
+          <div class="desc">
+            <p class="lead">Conferência</p>
+            <p class="desc__txt">Conferência de links e imagens de páginas</p>
+          </div>
+          <img src="{{site.baseurl}}/images/roboConf.png" alt="">
+        </a>
+      <a href="{{site.baseurl}}/moblyFrontcontent/newsletter.html" class="item-g">
+          
+          <div class="desc">
+            <p class="lead">Newsletter</p>
+            <p class="desc__txt">Códigos para as newsletters</p>
+           
+          </div>
+          <img src="{{site.baseurl}}/images/roboNl.png" alt="">
+        </a>
+      <a href="{{site.baseurl}}/moblyFrontcontent/scripts.html" class="item-g">
+         
+          <div class="desc">
+            <p class="lead">Scripts</p>
+            <p class="desc__txt">Códigos JS para acelerar processos</p>
+          
+          </div>
+          <img src="{{site.baseurl}}/images/scriptsRand.png" alt="">
+        </a>
+      </div>
+      <div class="container">
+          <div class="row mt-5">
+              <h1 class=" m-auto text-center" style="color: #ffffff">Mobly Interface Style Guide</h1>
+          </div>
+          <div class="row moblyCores mt-5">
+              <div class="col-sm-2" style="background-color:#ff4600; color: #FFF ">Laranja <br>#ff4600</div>
+              <div class="col-sm-2" style="background-color: #FFF; ">Branco <br>#FFF</div>
+              <div class="col-sm-2" style="background-color: #5f23a8; color: #FFF">Roxo<br> #5f23a8</div>
+              <div class="col-sm-2" style="background-color:#64d4c8;  ">Azul Esverdeado<br> #64d4c8</div>
+              <div class="col-sm-2" style="background-color:#ffb432;  ">Amarelo <br>#ffb432</div>
+              <div class="col-sm-2" style="background-color: #ff0a1e; color: #FFF">Vermelho <br>#ff0a1e</div>
+          </div>
+          <div class="row moblyCores">
+              <div class="col-sm-2" style="background-color: #cc80ff; ">Lilás<br> #cc80ff</div>
+              <div class="col-sm-2" style="background-color:#64b4d7;  ">Azul médio<br> #64b4d7</div>
+              <div class="col-sm-2" style="background-color: #46d25a; ">Verde<br> #46d25a</div>
+              <div class="col-sm-2" style="background-color:#0a32a0; color: #FFF ">Azul<br> #0a32a0</div>
+              <div class="col-sm-2" style="background-color:#e1cdbe ; ">Rosa Claro <br>#e1cdbe</div>
+              <div class="col-sm-2" style="background-color: #c3e1dc; ">Cinza Esverdeado <br>#c3e1dc</div>
+          </div>
+          <div class="row moblyCores mb-5">
+              <div class="col-sm-2" style="background-color: #e1e6e1; ">Cinza Claro<br> #e1e6e1</div>
+              <div class="col-sm-2" style="background-color: #becddc; ">Cinza Azulado <br>#becddc</div>
+              <div class="col-sm-2" style="background-color: #9bafbe; ">Cinza Médio<br> #9bafbe</div>
+              <div class="col-sm-2" style="background-color: #828791;color: #FFF ">Cinza Concreto<br> #828791</div>
+              <div class="col-sm-2" style="background-color: #414141;color: #FFF ">Cinza Grafite <br>#414141</div>
+              <div class="col-sm-2" style="background-color: #282d3c;color: #FFF ">Cinza Chumbo <br>#282d3c</div>
+          </div>
+    
+          <textarea style="height: 0; position: absolute; bottom: 26px; z-index: -99999; opacity: 0" class="colorToCopytxt"></textarea>
+      </div>
+  </main>
