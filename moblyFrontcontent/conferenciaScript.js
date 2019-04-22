@@ -127,7 +127,7 @@ $(document).ready(function () {
             if ($(this).hasClass('sliderSS')) {
                 changeColorLi('linha_1')
             } else if ($(this).hasClass('bannerFixo')) {
-                changeColorLi('cms_sub')
+                changeColorLi('bannerfixo')
             } else if ($(this).find('h2.bannerId__title:contains(Novidades)').length) {
                 changeColorLi('newness')
             } else if ($(this).find('h2.bannerId__title:contains(Promoções)').length) {
